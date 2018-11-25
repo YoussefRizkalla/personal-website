@@ -39,7 +39,7 @@ const styles = {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      marginRight: 35,
+      marginRight: 40,
     },
   },
   menuButton: {
@@ -118,7 +118,6 @@ class ButtonAppBar extends React.Component {
         <div className={classes.root}>
           <AppBar position="fixed">
             <Toolbar>
-              
               <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" onClick={this.toggleDrawer('top', true)}>
                 <MenuIcon />
               </IconButton>
