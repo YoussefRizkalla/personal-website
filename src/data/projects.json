@@ -1,0 +1,31 @@
+[
+    {
+      "name": "The Perpetuator",
+      "date": "Oct 2017 - Dec 2017",
+      "description": "A 3D / 2D perspective shift game built with Unreal Engine 4. Placed 1st for best 3D game at Dufferin Peel's annual game design competition hosted at the University of Toronto Mississauga.",
+      "technologies": ["Unreal Engine 4", "Unreal Blueprints"],
+      "img": "project-ninja.png",
+      "src": "https://github.com/JohnWinter13/Ninja",
+      "url": ""
+    },
+
+    {
+        "name": "Contest Programming",
+        "date": "Nov 2017 - Mar 2018",
+        "description": "A repository containing implementations of common algorithms and data structures over a variety of topics. Also includes a sample of problem solutions completed on online judges.",
+        "technologies": ["C++", "C#", "Java"],
+        "img": "project-cp.png",
+        "src": "https://github.com/JohnWinter13/CPLibrary",
+        "url": ""
+    },
+
+    {
+        "name": "Portfolio Website",
+        "date": "Nov 2018 - Dec 2018",
+        "description": "The website that you're looking at right now. A static & responsive website built with Gatsby. Allows for easy modification on the project pages by parsing JSON. Supports blog posts by parsing markdown files.",
+        "technologies": ["Gatsby", "React", "Javascript"],
+        "img": "project-portfolio.png",
+        "src": "https://github.com/JohnWinter13/personal-website",
+        "url": "https://johnwinter13.github.io"
+    }
+  ]
