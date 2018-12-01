@@ -8,13 +8,15 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography'
 
 import 'typeface-roboto'
-import 'typeface-bad-script'
 
 const BlogPage = ({ data }) => (
   <Layout>
-    <h2>Blog</h2>
-    <p>These are some blog posts that I write every once in a while.</p>
-    <p>You'll find me writing about programming, technology, and random stuff.</p>
+    <Link to="/blog" style={{textDecoration:'none'}}><Typography variant='h4'>Blog</Typography></Link>
+    <br/>
+    <Typography variant='p'>These are some blog posts that I write every once in a while.</Typography>
+    <br/>
+    <Typography variant='p'>You'll find me writing about programming, technology, and random stuff.</Typography>
+    <br/>
     <Paper style={{padding: 25}}> 
       <h3 style={{textAlign:'center'}}>Latest Posts</h3>
       {data.allMarkdownRemark.edges.map(post => (
@@ -26,7 +28,7 @@ const BlogPage = ({ data }) => (
             </Typography>
             <br />
             <p>{post.node.excerpt}</p>
-            <Link to={post.node.frontmatter.path}>Continue reading...</Link>
+            <Link to={post.node.frontmatter.path} style={{color:'#000', textDecorationColor:'#a31faa'}}>Continue reading...</Link>
           </div>
         </Paper>
       ))}
