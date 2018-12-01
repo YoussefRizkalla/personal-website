@@ -15,7 +15,7 @@ const BlogPage = ({ data }) => (
     <br/>
     <Typography variant='p'>These are some blog posts that I write every once in a while.</Typography>
     <br/>
-    <Typography variant='p'>You'll find me writing about programming, technology, and random stuff.</Typography>
+    <Typography variant='p'>You&#39;ll find me writing about programming, technology, and random stuff.</Typography>
     <br/>
     <Paper style={{padding: 25}}> 
       <h3 style={{textAlign:'center'}}>Latest Posts</h3>

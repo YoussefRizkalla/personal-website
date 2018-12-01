@@ -22,25 +22,14 @@ const styles = theme => ({
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
-  actions: {
-    display: 'flex',
-  },
-  expand: {
-    transform: 'rotate(0deg)',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-    marginLeft: 'auto',
-    [theme.breakpoints.up('sm')]: {
-      marginRight: -8,
-    },
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
   chip: {
     marginLeft: 15,
     marginBottom: 5,
+  },
+  pcard : {
+    [theme.breakpoints.up('md')]: {
+      minHeight: 550,
+    },
   },
 })
 
@@ -59,7 +48,7 @@ class ProjectCard extends React.Component {
             const image = imgData.node.childImageSharp.sizes
             return (
               <Grid item xs={12} md={4} sm={6}>
-                <Card className={classes.card}>
+                <Card className={classes.pcard}>
                   <CardHeader
                     title= {project.name}
                     subheader= {project.date}

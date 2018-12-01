@@ -9,7 +9,7 @@ const ProjectPage = ({data}) => {
   return (
     <Layout>
       <h2>Projects</h2>
-      <p>These are some projects that I've worked on over the years.</p>
+      <p>These are some projects that I&#39;ve worked on over the years.</p>
       <ProjectCards projectImgs={projectImgData} />    
     </Layout>
   )

@@ -22,8 +22,8 @@
     {
         "name": "Portfolio Website",
         "date": "Nov 2018 - Dec 2018",
-        "description": "The website that you're looking at right now. A static & responsive website built with Gatsby. Allows for easy modification on the project pages by parsing JSON. Supports blog posts by parsing markdown files.",
-        "technologies": ["Gatsby", "React", "Javascript"],
+        "description": "The website that you're looking at right now. A static & responsive website built with Gatsby.",
+        "technologies": ["Gatsby", "React", "Javascript", "GraphQL"],
         "img": "project-portfolio.png",
         "src": "https://github.com/JohnWinter13/personal-website",
         "url": "https://johnwinter13.github.io"
