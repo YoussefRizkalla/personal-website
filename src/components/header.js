@@ -19,9 +19,13 @@ import HomeIcon from '@material-ui/icons/Home';
 import BookmarksIcon from '@material-ui/icons/Bookmarks';
 import LaptopIcon from '@material-ui/icons/Laptop';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import DownloadIcon from '@material-ui/icons/CloudDownload'
 
 import 'typeface-bad-script';
 import 'typeface-roboto';
+
+import resume from "../data/resume.pdf"
+
 
 const theme = createMuiTheme({
   palette: {
@@ -98,18 +102,18 @@ class ButtonAppBar extends React.Component {
             <ListItemText>Projects</ListItemText>
           </ListItem>
         </Link>
-        <Link to="/resume" className={classes.linkb}>
-          <ListItem button>
-            <ListItemIcon><AssignmentIcon/></ListItemIcon>
-            <ListItemText>Resume</ListItemText>
-          </ListItem>
-        </Link>
         <Link to="/blog" className={classes.linkb}>
           <ListItem button>
             <ListItemIcon><BookmarksIcon/></ListItemIcon>
             <ListItemText>Blog</ListItemText>
           </ListItem>
         </Link>
+        <a href={resume} target="_blank" rel="noopener noreferrer" className={classes.linkb}> 
+          <ListItem button>
+            <ListItemIcon><AssignmentIcon/></ListItemIcon>
+            <ListItemText>Resume</ListItemText>
+          </ListItem>
+        </a>
       </div>
     );
   
@@ -137,17 +141,17 @@ class ButtonAppBar extends React.Component {
               <Link to="/projects" className={classes.link}>
                 <Button color="inherit">Projects</Button>
               </Link>
-              <Link to="/resume" className={classes.link}>
-                <Button color="inherit">Resume</Button>
-              </Link>
               <Link to="/blog" className={classes.link}>
                 <Button color="inherit">Blog</Button>
               </Link>
+              <a href={resume} target="_blank" rel="noopener noreferrer" className={classes.link}> 
+                <Button color="inherit">Resume<DownloadIcon style={{marginLeft: 10}}/></Button>
+              </a>
             </Toolbar>
           </AppBar>
         </div>
       </MuiThemeProvider>
-    );
+    )
   }
 }
 
