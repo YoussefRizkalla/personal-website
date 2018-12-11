@@ -27,6 +27,7 @@ const Layout = ({ children }) => (
           <meta name="keywords" content={data.site.siteMetadata.keywords} />
           <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
           <meta name="google-site-verification" content="wWsQQEeOdjVzvcw9gxebtP62w_NocddROZ8R19ch8as" />
+          <meta name="msvalidate.01" content="F448CC7E00862A3F5A09F8160FE68628" />
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
