@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Youssef Rizkalla',
+    description: 'A passionate software developer and computer science student at McMaster University.', 
+    keywords: 'youssef, rizkalla, software, computer science, developer',
+    siteUrl: 'johnwinter13.github.io',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

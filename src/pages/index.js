@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import 'typeface-bad-script';
 import 'typeface-roboto';
 
-const IndexPage = ({data}, theme) => (
+const IndexPage = ({ data }) => (
   <Layout>
     <Img style={{ position: "absolute", left: 0, top: 0, width: "100%", height: "100%", zIndex: "-1"}} fixed={data.file.childImageSharp.fixed}/>
     <div style = {{marginTop: 100, textAlign: 'center',}}>

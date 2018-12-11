@@ -9,23 +9,23 @@ import './layout.css'
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query siteMetaDataQuery {
         site {
           siteMetadata {
             title
+            description
+            keywords
+            siteUrl
           }
         }
       }
     `}
     render={data => (
       <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        >
+        <Helmet title={data.site.siteMetadata.title}>
+          <meta name="description" content={data.site.siteMetadata.description} />
+          <meta name="keywords" content={data.site.siteMetadata.keywords} />
+          <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
