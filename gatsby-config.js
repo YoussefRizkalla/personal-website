@@ -3,7 +3,7 @@ module.exports = {
     title: 'Youssef Rizkalla',
     description: 'A passionate software developer and computer science student at McMaster University.', 
     keywords: 'youssef, rizkalla, software, computer science, developer',
-    siteUrl: 'johnwinter13.github.io',
+    siteUrl: 'youssefrizkalla.ml',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,11 +19,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Youssef Rizkalla Portfolio',
+        short_name: 'Youssef Rizkalla',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#1e88e5',
+        theme_color: '#1e88e5',
         display: 'minimal-ui',
         icon: 'src/images/favicon-1024.png',
       },
