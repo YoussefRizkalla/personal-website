@@ -3,7 +3,7 @@ module.exports = {
     title: 'Youssef Rizkalla',
     description: 'A passionate software developer and computer science student at McMaster University.', 
     keywords: 'youssef, rizkalla, software, computer science, developer',
-    siteUrl: 'youssefrizkalla.ml',
+    siteUrl: 'https://www.youssefrizkalla.ml',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
