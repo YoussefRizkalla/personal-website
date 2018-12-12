@@ -12,15 +12,17 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const styles = theme => ({
   paper : {
-    margin: 50,
     marginBottom: 0,
     backgroundColor: 'transparent',
-    [theme.breakpoints.up('xl')]: {
-      margin: 250,
+    [theme.breakpoints.up('lg')]: {
+      margin: 300,
       marginBottom: 0,
     },
+  },
+  text : {
+    color: '#FFF',
     [theme.breakpoints.down('xs')]:{
-      margin: 0
+      display: 'none',
     }
   },
 })
@@ -30,22 +32,22 @@ class Contact extends React.Component {
     const { classes } = this.props
     return (
       <Paper className={classes.paper}>
-      <Typography variant="h4"  style={{color: '#FFF'}}>Contact Me</Typography>
-      <a href='https://github.com/JohnWinter13' target="_blank" rel="noopener noreferrer">   
-          <IconButton aria-label="View Github" style={{color: '#FFF'}}>     
-          <FontAwesomeIcon icon={faGithub} />
-          </IconButton>
-      </a>
-      <a href='https://www.linkedin.com/in/youssef-rizkalla' target="_blank" rel="noopener noreferrer">   
-          <IconButton aria-label="View Linkedin" style={{color: '#FFF'}}>
-          <FontAwesomeIcon icon={faLinkedin} />
-          </IconButton>
-      </a>
-      <a href='mailto:rizkally@mcmaster.ca' target="_blank" rel="noopener noreferrer">        
-          <IconButton aria-label="Email Me" style={{color: '#FFF'}}>
-          <FontAwesomeIcon icon={faEnvelope} />
-          </IconButton>
-      </a>
+        <Typography variant="h4"  className={classes.text}>Contact Me</Typography>
+        <a href='https://github.com/JohnWinter13' target="_blank" rel="noopener noreferrer">   
+            <IconButton aria-label="View Github" style={{color: '#FFF'}}>     
+              <FontAwesomeIcon icon={faGithub} />
+            </IconButton>
+        </a>
+        <a href='https://www.linkedin.com/in/youssef-rizkalla' target="_blank" rel="noopener noreferrer">   
+            <IconButton aria-label="View Linkedin" style={{color: '#FFF'}}>
+              <FontAwesomeIcon icon={faLinkedin} />
+            </IconButton>
+        </a>
+        <a href='mailto:rizkally@mcmaster.ca' target="_blank" rel="noopener noreferrer">        
+            <IconButton aria-label="Email Me" style={{color: '#FFF'}}>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </IconButton>
+        </a>
       </Paper>
     )
   }

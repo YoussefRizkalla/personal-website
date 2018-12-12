@@ -13,7 +13,7 @@ import 'typeface-roboto';
 const IndexPage = ({ data }) => (
   <Layout>
     <Img style={{ position: "absolute", left: 0, top: 0, width: "100%", height: "100%", zIndex: "-1"}} fixed={data.file.childImageSharp.fixed}/>
-    <div style = {{marginTop: 100, textAlign: 'center',}}>
+    <div style = {{marginTop: 60, textAlign: 'center',}}>
       <Typography variant="h2" style={{color: "#FFF", fontFamily: "Bad Script"}}>Hello World!</Typography>
       <br/>
       <Typography variant="h6" style={{color: '#FFF'}}>I&#39;m a computer science student at McMaster University.</Typography>
