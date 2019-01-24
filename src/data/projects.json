@@ -10,12 +10,12 @@
     },
 
     {
-        "name": "Contest Programming",
-        "date": "Nov 2017 - Mar 2018",
-        "description": "A repository containing implementations of common algorithms and data structures over a variety of topics. Also includes a sample of problem solutions completed on online judges.",
-        "technologies": ["C++", "C#", "Java"],
-        "img": "project-cp.png",
-        "src": "https://github.com/JohnWinter13/CPLibrary",
+        "name": "Wild Tiger Thai (WIP)",
+        "date": "Jan 2019 - Present",
+        "description": "A static restaurant website built with a GraphQL backend, allowing the owners to easily modify menu items and images by modifying JSON.",
+        "technologies": ["Gatsby", "React", "Node", "Javascript", "GraphQL" , "Progressive Web App"],
+        "img": "project-wild-tiger.png",
+        "src": "https://github.com/JohnWinter13/wild-tiger",
         "url": ""
     },
 
@@ -27,5 +27,25 @@
         "img": "project-portfolio.png",
         "src": "https://github.com/JohnWinter13/personal-website",
         "url": "https://youssefrizkalla.ml"
+    },
+
+    {
+        "name": "Contest Programming",
+        "date": "Nov 2017 - Mar 2018",
+        "description": "A repository containing implementations of common algorithms and data structures over a variety of topics. Also includes a sample of problem solutions completed on online judges.",
+        "technologies": ["C++", "C#", "Java"],
+        "img": "project-cp.png",
+        "src": "https://github.com/JohnWinter13/CPLibrary",
+        "url": ""
+    },
+
+    {
+        "name": "Kingdom Hearts III Countdown",
+        "date": "Dec 2018",
+        "description": "A simple real-time countdown application for the launch of Kingdom Hearts III.",
+        "technologies": ["Javascript", "HTML5", "CSS3"],
+        "img": "project-kh3.png",
+        "src": "https://github.com/JohnWinter13/kh3-countdown",
+        "url": "https://johnwinter13.github.io/kh3-countdown/"
     }
 ]
