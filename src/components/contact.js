@@ -1,9 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import { withStyles } from '@material-ui/core/styles'
-import Typography from '@material-ui/core/Typography'
-import Paper from '@material-ui/core/Paper'
 import IconButton from '@material-ui/core/IconButton'
 
 import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa'
@@ -25,12 +22,24 @@ const styles = theme => ({
   },
 })
 
+const Text = styled.h2`
+  color: white;
+  margin-bottom: 0;
+  font-family: 'Bad Script'
+`
+
+const Paper = styled.div`
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  margin: 25% ;
+  margin-bottom: 20%;
+`
+
 class Contact extends React.Component {
   render() {
-    const { classes } = this.props
     return (
-      <Paper className={classes.paper}>
-        <Typography variant="h4"  className={classes.text}>Contact Me</Typography>
+      <Paper>
+        <Text>Contact Me</Text>
         <a href='https://github.com/JohnWinter13' target="_blank" rel="noopener noreferrer">   
             <IconButton aria-label="View Github" style={{color: '#FFF'}}>     
               <FaGithub/>
@@ -51,8 +60,4 @@ class Contact extends React.Component {
   }
 }
 
-Contact.propTypes = {
-  classes: PropTypes.object.isRequired,
-}
-
-export default withStyles(styles)(Contact)
+export default Contact

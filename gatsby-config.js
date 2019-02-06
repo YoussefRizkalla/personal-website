@@ -40,5 +40,6 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-material-ui',
+    `gatsby-plugin-styled-components`,
   ],
 }
