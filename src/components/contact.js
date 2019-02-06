@@ -5,23 +5,6 @@ import IconButton from '@material-ui/core/IconButton'
 
 import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa'
 
-const styles = theme => ({
-  paper : {
-    marginBottom: 0,
-    backgroundColor: 'transparent',
-    [theme.breakpoints.up('lg')]: {
-      margin: 300,
-      marginBottom: 0,
-    },
-  },
-  text : {
-    color: '#FFF',
-    [theme.breakpoints.down('xs')]:{
-      display: 'none',
-    }
-  },
-})
-
 const Text = styled.h2`
   color: white;
   margin-bottom: 0;
@@ -41,19 +24,19 @@ class Contact extends React.Component {
       <Paper>
         <Text>Contact Me</Text>
         <a href='https://github.com/JohnWinter13' target="_blank" rel="noopener noreferrer">   
-            <IconButton aria-label="View Github" style={{color: '#FFF'}}>     
-              <FaGithub/>
-            </IconButton>
+          <IconButton aria-label="View Github" style={{color: '#FFF'}}>     
+            <FaGithub/>
+          </IconButton>
         </a>
         <a href='https://www.linkedin.com/in/youssef-rizkalla' target="_blank" rel="noopener noreferrer">   
-            <IconButton aria-label="View Linkedin" style={{color: '#FFF'}}>
-              <FaLinkedin/>
-            </IconButton>
+          <IconButton aria-label="View Linkedin" style={{color: '#FFF'}}>
+            <FaLinkedin/>
+          </IconButton>
         </a>
         <a href='mailto:rizkally@mcmaster.ca' target="_blank" rel="noopener noreferrer">        
-            <IconButton aria-label="Email Me" style={{color: '#FFF'}}>
-              <FaEnvelope/>
-            </IconButton>
+          <IconButton aria-label="Email Me" style={{color: '#FFF'}}>
+            <FaEnvelope/>
+          </IconButton>
         </a>
       </Paper>
     )
