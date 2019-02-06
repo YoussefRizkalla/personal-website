@@ -6,9 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
 import IconButton from '@material-ui/core/IconButton'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa'
 
 const styles = theme => ({
   paper : {
@@ -35,17 +33,17 @@ class Contact extends React.Component {
         <Typography variant="h4"  className={classes.text}>Contact Me</Typography>
         <a href='https://github.com/JohnWinter13' target="_blank" rel="noopener noreferrer">   
             <IconButton aria-label="View Github" style={{color: '#FFF'}}>     
-              <FontAwesomeIcon icon={faGithub} />
+              <FaGithub/>
             </IconButton>
         </a>
         <a href='https://www.linkedin.com/in/youssef-rizkalla' target="_blank" rel="noopener noreferrer">   
             <IconButton aria-label="View Linkedin" style={{color: '#FFF'}}>
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FaLinkedin/>
             </IconButton>
         </a>
         <a href='mailto:rizkally@mcmaster.ca' target="_blank" rel="noopener noreferrer">        
             <IconButton aria-label="Email Me" style={{color: '#FFF'}}>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FaEnvelope/>
             </IconButton>
         </a>
       </Paper>
