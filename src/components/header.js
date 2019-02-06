@@ -14,12 +14,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
-import MenuIcon from '@material-ui/icons/Menu';
-import HomeIcon from '@material-ui/icons/Home';
-import BookmarksIcon from '@material-ui/icons/Bookmarks';
-import LaptopIcon from '@material-ui/icons/Laptop';
-import AssignmentIcon from '@material-ui/icons/Assignment';
-import DownloadIcon from '@material-ui/icons/CloudDownload'
+import { MdLaptop, MdHome, MdBookmark, MdAssignment, MdCloudDownload, MdMenu } from 'react-icons/md'
 
 import 'typeface-bad-script';
 import 'typeface-roboto';
@@ -92,25 +87,25 @@ class ButtonAppBar extends React.Component {
       <div className={classes.fullList}>
         <Link to="/" className={classes.linkb}>
           <ListItem button>
-            <ListItemIcon><HomeIcon/></ListItemIcon>
+            <ListItemIcon><MdHome size={24}/></ListItemIcon>
             <ListItemText>Home</ListItemText>
           </ListItem>
         </Link>
         <Link to="/projects" className={classes.linkb}>
           <ListItem button>
-            <ListItemIcon><LaptopIcon/></ListItemIcon>
+            <ListItemIcon><MdLaptop size={24}/></ListItemIcon>
             <ListItemText>Projects</ListItemText>
           </ListItem>
         </Link>
         <Link to="/blog" className={classes.linkb}>
           <ListItem button>
-            <ListItemIcon><BookmarksIcon/></ListItemIcon>
+            <ListItemIcon><MdBookmark size={24}/></ListItemIcon>
             <ListItemText>Blog</ListItemText>
           </ListItem>
         </Link>
         <a href={resume} target="_blank" rel="noopener noreferrer" className={classes.linkb}> 
           <ListItem button>
-            <ListItemIcon><AssignmentIcon/></ListItemIcon>
+            <ListItemIcon><MdAssignment size={24}/></ListItemIcon>
             <ListItemText>Resume</ListItemText>
           </ListItem>
         </a>
@@ -123,7 +118,7 @@ class ButtonAppBar extends React.Component {
           <AppBar position="fixed">
             <Toolbar>
               <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" onClick={this.toggleDrawer('top', true)}>
-                <MenuIcon />
+                <MdMenu size={24} />
               </IconButton>
               <Drawer anchor="top" open={this.state.top} onClose={this.toggleDrawer('top', false)}>
                 <div
@@ -145,7 +140,7 @@ class ButtonAppBar extends React.Component {
                 <Button color="inherit">Blog</Button>
               </Link>
               <a href={resume} target="_blank" rel="noopener noreferrer" className={classes.link}> 
-                <Button color="inherit">Resume<DownloadIcon style={{marginLeft: 10}}/></Button>
+                <Button color="inherit">Resume<MdCloudDownload size={24} style={{marginLeft: 10}}/></Button>
               </a>
             </Toolbar>
           </AppBar>
