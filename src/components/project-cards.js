@@ -12,8 +12,7 @@ import Typography from '@material-ui/core/Typography'
 import Chip from '@material-ui/core/Chip'
 import Grid from '@material-ui/core/Grid';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobeAmericas, faCode } from '@fortawesome/free-solid-svg-icons'
+import { FaGlobeAmericas, FaCode } from 'react-icons/fa'
 
 import projectList from "../data/projects.json"
 
@@ -71,14 +70,14 @@ class ProjectCard extends React.Component {
                     {project.src &&
                       <a href={project.src} target="_blank" rel="noopener noreferrer">
                         <IconButton aria-label="View Source">
-                          <FontAwesomeIcon icon={faCode} />
+                          <FaCode/>
                         </IconButton>
                       </a> 
                     }
                     {project.url &&
                       <a href={project.url} target="_blank" rel="noopener noreferrer">
                         <IconButton aria-label="View Website">
-                          <FontAwesomeIcon icon={faGlobeAmericas} />
+                          <FaGlobeAmericas/>
                         </IconButton>
                       </a> 
                     }
