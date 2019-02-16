@@ -1,33 +1,32 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "youssef-rizkalla-personal-website",
+  "description": "My personal website, built with GatsbyJS",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Youssef Rizkalla <youssefrizkalla1@gmail.com>",
   "dependencies": {
-    "@babel/runtime": "^7.2.0",
-    "@material-ui/core": "^3.5.1",
-    "@material-ui/icons": "^3.0.1",
-    "@material-ui/styles": "^3.0.0-alpha.0",
+    "@babel/runtime": "^7.3.1",
+    "@material-ui/core": "^3.9.2",
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.0.19",
-    "gatsby-image": "^2.0.15",
-    "gatsby-plugin-catch-links": "^2.0.9",
-    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby": "^2.1.4",
+    "gatsby-image": "^2.0.29",
+    "gatsby-plugin-catch-links": "^2.0.11",
+    "gatsby-plugin-manifest": "^2.0.17",
     "gatsby-plugin-material-ui": "^0.1.3",
-    "gatsby-plugin-offline": "^2.0.19",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sharp": "^2.0.17",
-    "gatsby-plugin-sitemap": "^2.0.3",
+    "gatsby-plugin-offline": "^2.0.23",
+    "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-sharp": "^2.0.20",
+    "gatsby-plugin-sitemap": "^2.0.5",
     "gatsby-plugin-styled-components": "^3.0.5",
-    "gatsby-source-filesystem": "^2.0.4",
-    "gatsby-transformer-remark": "^2.1.15",
-    "gatsby-transformer-sharp": "^2.1.4",
+    "gatsby-source-filesystem": "^2.0.20",
+    "gatsby-transformer-remark": "^2.2.5",
+    "gatsby-transformer-sharp": "^2.1.13",
     "i": "^0.3.6",
-    "npm": "^6.4.1",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "jss": "^10.0.0-alpha.10",
+    "npm": "^6.8.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
     "react-helmet": "^5.2.0",
-    "react-icons": "^3.3.0",
+    "react-icons": "^3.4.0",
     "react-jss": "^8.6.1",
     "styled-components": "^4.1.3",
     "typeface-bad-script": "0.0.54",
@@ -43,14 +42,13 @@
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": ""
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "prettier": "^1.14.2"
+    "prettier": "^1.16.4"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/JohnWinter13/personal-website"
   }
 }
