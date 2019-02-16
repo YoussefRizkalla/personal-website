@@ -25,7 +25,7 @@
         "description": "A cross-platform mobile app to help people organize fitness events and find workout partners. Awarded Best Use of Google Cloud Platform at DeltaHacks V.",
         "technologies": ["Flutter", "Dart", "Firebase"],
         "img": "project-get-fit.png",
-        "src": "https://github.com/JohnWinter13/get_fit",
+        "src": "https://github.com/JohnWinter13/fit_together",
         "url": "https://devpost.com/software/fit_together"
     },
 
