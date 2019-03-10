@@ -10,13 +10,13 @@
     },
 
     {
-        "name": "Wild Tiger Thai (WIP)",
-        "date": "Jan 2019 - Present",
+        "name": "Wild Tiger Thai",
+        "date": "Jan 2019 - Mar 2019",
         "description": "A static restaurant website built with a GraphQL backend, allowing the owners to easily modify menu items and images by modifying JSON.",
         "technologies": ["Gatsby", "React", "Node", "Javascript", "GraphQL" , "Progressive Web App"],
         "img": "project-wild-tiger.png",
         "src": "https://github.com/JohnWinter13/wild-tiger",
-        "url": ""
+        "url": "https://wildtigerthai.netlify.com/"
     },
 
     {
