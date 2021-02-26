@@ -1,44 +1,9 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require('path');
 
-const path = require('path')
-
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
-
-  const postTemplate = path.resolve('src/templates/blog-post.js')
-
-  return graphql(`
-    {
-      allMarkdownRemark {
-        edges {
-          node {
-            html
-            id
-            frontmatter {
-              path
-              title
-              date
-              time
-            }
-          }
-        }
-      }
-    }
-  `).then(res => {
-    if (res.errors) {
-      return Promise.reject(res.errors)
-    }
-
-    res.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: postTemplate,
-      })
-    })
-  })
-}
-
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    },
+  });
+};

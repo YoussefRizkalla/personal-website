@@ -1,44 +1,76 @@
+const config = require('./src/data/config');
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    title: 'Youssef Rizkalla',
-    description: 'A passionate software developer and computer science student at McMaster University.', 
-    keywords: 'youssef, rizkalla, software, computer science, developer',
-    siteUrl: 'https://www.youssefrizkalla.ml',
+    title: config.defaultTitle,
+    description: config.defaultDescription,
+    author: config.author,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-source-graphql',
       options: {
-        name: 'Youssef Rizkalla Portfolio',
-        short_name: 'Youssef Rizkalla',
-        start_url: '/',
-        background_color: '#1e88e5',
-        theme_color: '#1e88e5',
-        display: 'minimal-ui',
-        icon: 'src/images/favicon-1024.png',
+        typeName: 'GitHub',
+        fieldName: 'github',
+        url: 'https://api.github.com/graphql',
+        headers: {
+          Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
+        },
+        fetchOptions: {},
       },
     },
-    'gatsby-plugin-catch-links',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-plugin-nprogress',
       options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
+        color: config.themeColor,
+        showSpinner: false,
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: config.googleAnalyticsID,
+        head: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-favicon',
+      options: {
+        logo: './static/favicon/favicon-512.png',
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: config.defaultTitle,
+        short_name: 'starter',
+        start_url: '/',
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: 'minimal-ui',
+        icon: './static/favicon/favicon-512.png',
+      },
+    },
     'gatsby-plugin-offline',
-    'gatsby-plugin-sitemap',
-    `gatsby-plugin-styled-components`,
   ],
-}
+};
