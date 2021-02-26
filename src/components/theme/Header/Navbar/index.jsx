@@ -10,8 +10,8 @@ const Navbar = () => {
 
   return (
     <Wrapper as={Container}>
-      <Brand as={Link} to="/" theme={theme}>
-        John Doe
+      <Brand as={Link} to="/" theme={theme} style={{fontFamily: 'Bad Script'}}>
+        Youssef Rizkalla
       </Brand>
       <NavbarLinks desktop />
     </Wrapper>
