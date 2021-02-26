@@ -3,12 +3,12 @@
     "id": 0,
     "name": "Telegram",
     "link": "https://t.me/smakosh",
-    "icon": "/icons/telegram.svg"
+    "icon": "/icons/linkedin.svg"
   },
   {
     "id": 1,
     "name": "Github",
-    "link": "https://github.com/smakosh",
+    "link": "https://github.com/JohnWinter13",
     "icon": "/icons/github.svg"
   },
   {

@@ -7,15 +7,12 @@ export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        <h2 style={{fontFamily: 'Bad Script'}}>Youssef Rizkalla</h2>
-        <span>
-          © All rights are reserved | {new Date().getFullYear()} | Made with{' '}
-          <span aria-label="love" role="img">
-            💖
-          </span>{' '}
-          by{' '}
-          <a href="https://smakosh.com/?ref=portfolio-dev" rel="noopener noreferrer" target="_blank">
-            Smakosh
+        <h2 style={{ fontFamily: 'Bad Script' }}>Youssef Rizkalla</h2>
+
+        <span >
+          © All rights are reserved | {new Date().getFullYear()} | Built with{' '}
+          <a href="https://www.gatsbyjs.com/" rel="noopener noreferrer" target="_blank" aria-label="gatsby">
+            <img style={{ verticalAlign: 'top' }} width="18" height="18" src="icons/gatsby.svg" alt="gatsby" />
           </a>
         </span>
       </Details>
