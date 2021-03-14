@@ -13,5 +13,13 @@ module.exports = {
         postCssPlugins: [require('tailwindcss')],
       },
     },
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true,
+      },
+    },
   ],
 };
