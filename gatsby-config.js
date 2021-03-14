@@ -5,6 +5,13 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
-}
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-postcss',
+      options: {
+        // eslint-disable-next-line global-require
+        postCssPlugins: [require('tailwindcss')],
+      },
+    },
+  ],
+};
