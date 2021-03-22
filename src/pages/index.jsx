@@ -1,11 +1,10 @@
 import React from 'react';
 import Button from '../components/Button';
-import Nav from '../components/Nav';
+import Layout from '../components/Layout';
 
 export default function Home() {
   return (
-    <div>
-      <Nav />
+    <Layout>
       <div className="p-8 bg-blue-200">
         <Button>Contact Me</Button>
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -106,6 +105,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }
