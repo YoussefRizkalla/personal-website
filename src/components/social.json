@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "name": "Linkedin",
+    "link": "https://linkedin.com/in/youssef-rizkalla",
+    "icon": "/icons/linkedin.svg"
+  },
+  {
+    "id": 1,
+    "name": "Github",
+    "link": "https://github.com/JohnWinter13",
+    "icon": "/icons/github.svg"
+  },
+  {
+    "id": 3,
+    "name": "Email",
+    "link": "mailto:rizkally@mcmaster.ca",
+    "icon": "/icons/mail.svg"
+  }
+]
