@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -11,6 +12,7 @@ module.exports = {
     extend: {
       backgroundColor: ['active'],
     },
+    scrollbar: ['rounded'],
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 };
