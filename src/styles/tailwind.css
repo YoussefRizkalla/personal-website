@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 scrollbar-thumb-rounded;
+  @apply scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 scrollbar-thumb-rounded mr-2;
 }
