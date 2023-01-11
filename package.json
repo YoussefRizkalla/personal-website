@@ -18,7 +18,7 @@
     "gatsby-plugin-sitemap": "^2.0.5",
     "gatsby-plugin-styled-components": "^3.0.5",
     "gatsby-source-filesystem": "^2.0.20",
-    "gatsby-transformer-remark": "^2.2.5",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.1.13",
     "i": "^0.3.6",
     "jss": "^10.0.0-alpha.10",
